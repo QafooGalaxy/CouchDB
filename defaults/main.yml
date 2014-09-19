@@ -1,0 +1,3 @@
+---
+someOption: "someDefault"
+anotherMoreComplexOption: ["Maybe", "an", "Array"]

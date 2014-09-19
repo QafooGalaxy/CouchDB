@@ -1,0 +1,7 @@
+{
+    "name": "qafoogalaxy/BootstrapRole",
+    "type": "ansible-role",
+    "require": {
+        "qafoogalaxy/installer": "1.0"
+    }
+}

@@ -1,0 +1,6 @@
+---
+- name: "Do something useful"
+  debug: "Something useful just happened"
+
+- name: "Another useful step"
+  debug: "Something useful just happened"
