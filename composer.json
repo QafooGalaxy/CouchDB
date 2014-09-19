@@ -1,5 +1,5 @@
 {
-    "name": "qafoogalaxy/BootstrapRole",
+    "name": "qafoogalaxy/CouchDB",
     "type": "ansible-role",
     "require": {
         "qafoogalaxy/installer": "1.0"
