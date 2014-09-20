@@ -6,6 +6,6 @@
         "qafoogalaxy/BuildEnvironment": "1.0",
         "qafoogalaxy/Erlang": "1.0",
         "qafoogalaxy/Spidermonkey": "1.0",
-        "qafoogalaxy/ICU": "1.0",
+        "qafoogalaxy/ICU": "1.0"
     }
 }
