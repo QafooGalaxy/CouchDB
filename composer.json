@@ -2,10 +2,10 @@
     "name": "qafoogalaxy/CouchDB",
     "type": "ansible-role",
     "require": {
-        "qafoogalaxy/installer": "1.0",
-        "qafoogalaxy/BuildEnvironment": "1.0",
-        "qafoogalaxy/Erlang": "1.0",
-        "qafoogalaxy/Spidermonkey": "1.0",
-        "qafoogalaxy/ICU": "1.0"
+        "qafoogalaxy/installer": "dev-master",
+        "qafoogalaxy/BuildEnvironment": "dev-master",
+        "qafoogalaxy/Erlang": "dev-master",
+        "qafoogalaxy/Spidermonkey": "dev-master",
+        "qafoogalaxy/ICU": "dev-master"
     }
 }
