@@ -1,0 +1,23 @@
+---
+- name: "Install CouchDB"
+  apt: pkg=couchdb state=latest
+
+- name: "Write CouchDB local.ini configuration"
+  template: src=local.ini.j2 dest=/etc/couchdb/local.d/foorge.ini
+  notify: "Restart CouchDB"
+
+- name: "Check CouchDB started"
+  service: name=couchdb enabled=yes state=started
+
+- name: Register Consul KV Configuration
+  command:
+      curl -d"http://{{ item }}.couchdb.service.consul:{{ couchdb_port }}" -XPUT "http://localhost:8500/v1/kv/apps/{{ item }}/couchdb/url"
+  with_items: couchdb_apps
+
+- name: Register Consul Service
+  template: src=consul.j2 dest=/etc/consul.d/couchdb.json
+  register: couchdb_consul_service
+
+- name: Reload Consul
+  command: consul reload
+  when: couchdb_consul_service|changed
